@@ -261,8 +261,122 @@ html, body, * {
   background: #528aa5;
 }
 
+.try-free-inner {
+  padding: 70px 50px;
+  box-sizing: border-box;
+}
 
+.try-free__title {
+  font-family: 'MyriadPro';
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  letter-spacing: -1px;
+  color: #fff;
+}
 
+.float-arrow {
+  background: url('../images/rounded-arrow.png') no-repeat;
+  background-size: cover;
+  width: 81px;
+  height: 151px;
+  position: absolute;
+  top: 25px;
+  left: -80px;
+}
+
+.try-free__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.try-free__list {
+  margin-left: 70px;
+}
+
+.try-free__list-item {
+  font-family: 'MyriadPro';
+  font-size: 21px;
+  font-weight: lighter;
+  color: #fff;
+  padding: 10px 0 0 40px;
+  background: url('../images/galochka.png') no-repeat;
+  background-position: left;
+}
+
+.button-try {
+  font-family: 'MyriadPro';
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 30px 60px;
+  line-height: 1em;
+  background: #ffa215;
+  border-radius: 60px;
+  text-transform: uppercase;
+}
+
+/* why us */
+.why-us-inner {
+  padding: 70px 50px;
+}
+
+.why-us__content {
+  display: flex;
+  align-items: flex-start;  
+}
+
+.why-us__left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.why-us__right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.why-us__list {
+  padding-top: 40px;
+}
+
+.why-us__list > *+* {
+  margin-top: 30px;
+}
+
+.why-us__header {
+  font-family: 'MyriadPro';
+  color: #4e4e4e;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #4e4e4e;
+  padding: 5px;
+}
+
+.why-us__list-item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 75px;
+  width: 100px;
+}
+
+.why-us__list-item-icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-us__list-item-text {
+  font-family: 'MyriadPro';
+  color: #4e4e4e;
+  font-size: 23px;
+  font-weight: normal;
+  margin-left: 20px;
+}
 
 /* mixins */
 .lower-case {
