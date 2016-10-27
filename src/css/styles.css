@@ -406,6 +406,85 @@ html, body, * {
   box-sizing: border-box;
 }
 
+.parthners__title {
+  font-family: 'MyriadPro';
+  display: block;
+  color: #4e4e4e;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #4e4e4e;
+  padding-bottom: 5px;
+  margin: 0 150px;
+}
+
+.parthners__logos {
+  margin: 40px 0 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.parthners__logos > *+* {
+  margin-left: 90px;
+}
+
+.parthners__logo-item {
+  flex: 0 0 auto;
+}
+
+.parthners__description {
+  font-family: 'MyriadPro';
+  display: block;
+  color: #4e4e4e;
+  text-align: center;
+  font-size: 23px;
+}
+
+/* sertificate */
+.sertificate {
+  background: #FFF;
+}
+
+.sertificate-inner {
+  padding: 70px 50px;
+  box-sizing: border-box;
+}
+
+.sertificate__title {
+  font-family: 'MyriadPro';
+  display: block;
+  color: #4e4e4e;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #4e4e4e;
+  padding-bottom: 5px;
+  margin: 0 150px;
+}
+
+.sertificate__logos {
+  margin: 40px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.sertificate__logos > *+* {
+  margin-left: 90px;
+}
+
+.sertificate__logo-item {
+  flex: 0 0 140px;
+  text-align: center;
+}
+
+.sertificate__logo-item-text {
+  font-family: 'MyriadPro';
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
 
 /* mixins */
 .lower-case {
