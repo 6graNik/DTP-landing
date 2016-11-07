@@ -10,7 +10,7 @@
     <meta name="author" content="DTP Landing">
 
     <link rel="stylesheet" href="src/css/fonts.css">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="public/css/styles.css">
 
 </head>
 
@@ -82,12 +82,12 @@
                                 Бесплатный предрасчет!
                             </div>
                         </div>
-                        <form class="main__callback-form">
+                        <form class="main__callback-form" method="post">
                             <div class="callback-form__title">
                                 Форма связи
                             </div>
-                            <input type="text" placeholder="Ваша почта" class="callback-form__input" />
-                            <input type="text" placeholder="Ваш телефон" class="callback-form__input" />
+                            <input name="email" type="text" placeholder="Ваша почта" class="callback-form__input" required="required" />
+                            <input name="phone" type="text" placeholder="Ваш телефон" class="callback-form__input" required="required" />
                             <button type="submit" class="callback-form__submit">Оформить заявку</button>
                         </form>
                     </div>
@@ -261,7 +261,8 @@
               Компания основана в 2004 году, специализируется на правовой помощи юридическим и физическим лицам, при спорах со страховыми компаниями. Более 10 филиалов по России.
             </div>
           </section>
-          <section class="sertificate">
+        </section>
+        <section class="sertificate">
             <section class="sertificate-inner content">
               <div class="sertificate__title">
                 Сертификаты
@@ -300,8 +301,126 @@
               </div>
             </section>
           </section>
+        <section class="examples">
+          <section class="examples-inner content">
+            <div class="examples__title">
+              Примеры оценки ущерба
+            </div>
+            <div class="examples__slider">
+              <div class="examples__slider-inner">
+                <div class="examples__slider-item">
+                  <div class="slider-item__example-item">
+                    <div class="example-item__image-slider">
+                      <div class="example-item__image-slider-inner">
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_1.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_2.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_3.png" />
+                      </div>
+                    </div>
+                    <div class="example-item__image-slider__controls">
+                        <span class="main-slider__control-item main-slider__control-item--current"></span>
+                        <span class="main-slider__control-item"></span>
+                        <span class="main-slider__control-item"></span>
+                    </div>
+                    <div class="example-item__head">
+                      <span class="example-item__title">Экспертиза Ауди</span>
+                      <span class="example-item__date">12.02.16</span>
+                    </div>
+                    <div class="example-item__footer">
+                      <span class="example-item__footer-text">Сумма ущерба:</span>
+                      <span class="example-item__footer-price-holder">
+                        <span class="example-item__footer-price">25 000 руб.</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="slider-item__example-item">
+                    <div class="example-item__image-slider">
+                      <div class="example-item__image-slider-inner">
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_2.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_3.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_1.png" />
+                      </div>
+                    </div>
+                    <div class="example-item__image-slider__controls">
+                        <span class="main-slider__control-item main-slider__control-item--current"></span>
+                        <span class="main-slider__control-item"></span>
+                        <span class="main-slider__control-item"></span>
+                    </div>
+                    <div class="example-item__head">
+                      <span class="example-item__title">Экспертиза Ауди</span>
+                      <span class="example-item__date">12.02.16</span>
+                    </div>
+                    <div class="example-item__footer">
+                      <span class="example-item__footer-text">Сумма ущерба:</span>
+                      <span class="example-item__footer-price-holder">
+                        <span class="example-item__footer-price">25 000 руб.</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="slider-item__example-item">
+                    <div class="example-item__image-slider">
+                      <div class="example-item__image-slider-inner">
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_3.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_2.png" />
+                        <img class="example-item__image-slider-item" src="src/images/zaglushka_1.png" />
+                      </div>
+                    </div>
+                    <div class="example-item__image-slider__controls">
+                        <span class="main-slider__control-item main-slider__control-item--current"></span>
+                        <span class="main-slider__control-item"></span>
+                        <span class="main-slider__control-item"></span>
+                    </div>
+                    <div class="example-item__head">
+                      <span class="example-item__title">Экспертиза Ауди</span>
+                      <span class="example-item__date">12.02.16</span>
+                    </div>
+                    <div class="example-item__footer">
+                      <span class="example-item__footer-text">Сумма ущерба:</span>
+                      <span class="example-item__footer-price-holder">
+                        <span class="example-item__footer-price">25 000 руб.</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="examples__slider-control" data-dir="prev"></span>
+              <span class="examples__slider-control" data-dir="next"></span>
+            </div>
+            <div class="why-us__button-holder">
+                <button class="why-us__button">Получить экспертизу</button>
+            </div>
+          </section>
+        </section>
+        <section class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=2DCmxW0fiTJz6Ud46dRSW6wZXaYOidxq&amp;width=100%&amp;height=520&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </section>
+        <footer class="footer">
+          <section class="footer-inner content">
+            <div class="footer__first-title">
+              Для клиентов «ДТП ПОМОЩЬ» автотехническая экспертиза проводится <span class="green-text">бесплатно</span> в течение 1-3 дней!
+            </div>
+            <div class="footer__contacts footer__contacts-phone">
+                <img src="src/images/phone-icon.png" class="contacts__icon contacts-phone__icon" />
+                <span class="contacts-phone__text">8 800 3332 22 35</span>
+            </div>
+            <div class="footer__contacts footer__contacts-email">
+              <img src="src/images/email-icon.png" class="contacts__icon contacts-email__icon" />
+              <span class="contacts-email__text">
+                infodtp@mail.ru
+              </span>
+            </div>
+            <div class="footer__contacts footer__contacts-adress">
+                <img src="src/images/adress-icon.png" class="contacts__icon contacts-email__icon" />
+                <span class="contacts-days__text">
+                  г.Москва Озерковский пер. 15
+                </span>
+            </div>
+          </section>
+        </footer>
+        <div class="overlay"></div>
+        <div class="overlayCloseButton">x</div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jq.."></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="src/js/scripts.js"></script>
 </body>
 
