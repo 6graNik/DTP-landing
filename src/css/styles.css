@@ -171,7 +171,7 @@ html, body, * {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #fff;
+  background: #ccc;
   margin: 5px;
   cursor: pointer;
 }
@@ -536,13 +536,13 @@ html, body, * {
 }
 
 .examples__slider-control {
-  display: none;
   position: absolute;
-  top: 0;
+  top: 310px;
   left: 0;
   width: 40px;
   height: 40px;
-  background: black;
+  font-size: 54px;
+  cursor: pointer;
 }
 
 .examples__slider-control[data-dir="next"] {
@@ -554,7 +554,7 @@ html, body, * {
   display: block;
   flex: 0 0 322px;
   box-sizing: border-box;
-  height: 360px;
+  height: 388px;
   background: #f9f9f9;
   border: 1px solid #dedede;
   padding: 10px;
@@ -575,7 +575,7 @@ html, body, * {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: -30px;
+  margin-top: -5px;
 }
 
 .example-item__image-slider-item {
