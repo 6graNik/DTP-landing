@@ -123,6 +123,16 @@ html, body, * {
   background-size: cover;
 }
 
+#main-slider__item-2 {
+  background: url('../images/CC3.jpg');
+  background-size: cover;
+}
+
+#main-slider__item-3 {
+  background: url('../images/kia1.jpg');
+  background-size: cover;
+}
+
 .main-slider__item-cost {
   background: url('../images/cost-bg.png');
   position: absolute;
