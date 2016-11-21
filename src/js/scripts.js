@@ -62,26 +62,28 @@
         var email = $('.callback-form__input-email').val();
         var phone = $('.callback-form__input-phone').val();
 
-        var errors = false;
+        var errors = {
+          email: false,
+          phone: false
+        };
 
 
         if (!emailRegExp.test(email)) {
           $('.callback-form__input-email').val('Некорректный E-mail').css('color', 'red');
-          errors = true;
+          errors.email = true;
         }
 
-        if (!phoneRegExp.test(email)) {
+        if (!phoneRegExp.test(phone)) {
           $('.callback-form__input-phone').val('Некорректный Телефон').css('color', 'red');
-          errors = true;
+          errors.phone = true;
         }
 
-        if (!errors) {
-          window.location.search = '?form=success';
+        if (!errors.phone && !errors.email) {
           $(".main__callback-form").submit();
         } else {
           setTimeout(function(){
-            $('.callback-form__input-email').val('').css('color', 'black');
-            $('.callback-form__input-phone').val('').css('color', 'black');
+            var resetEmail = errors.email && $('.callback-form__input-email').val('').css('color', 'black');
+            var resetPhone = errors.phone && $('.callback-form__input-phone').val('').css('color', 'black');;
           }, 800);
         }
     });
